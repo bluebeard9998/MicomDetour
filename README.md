@@ -57,11 +57,11 @@ Details: Logs key steps, errors, and success messages. Includes contact info (Gi
    - Function: main()
    - Purpose: Orchestrates the entire process.
 # Steps:
-   1- Installs dependencies and downloads platform-tools.
-   2- Verifies device connection and region.
-   3- Executes ADB commands and captures logcat data.
-   4- Decrypts data, applies the HyperOS bypass, and sends the unlock request.
-   5- Interprets and logs the server’s response.
+   1 - Installs dependencies and downloads platform-tools.
+   2 - Verifies device connection and region.
+   3 - Executes ADB commands and captures logcat data.
+   4 - Decrypts data, applies the HyperOS bypass, and sends the unlock request.
+   5 - Interprets and logs the server’s response.
    - Details: Exits with an error if no device is detected or data capture fails.
 # Final Words
 This script provides a robust, automated solution for binding a Xiaomi device to a Mi account, addressing common challenges like HyperOS restrictions and region-specific server interactions. It’s user-friendly yet requires careful use due to its reliance on hardcoded cryptographic keys and direct device manipulation.
