@@ -1,16 +1,15 @@
-#Overview
+# Overview
 This Python script automates the binding of a Xiaomi device to a Mi account, a critical step in unlocking the bootloader using the Mi Unlock tool. It leverages ADB (Android Debug Bridge) to interact with an Android device, capturing and decrypting data from logcat, modifying it to bypass restrictions (e.g., for HyperOS), and sending a signed request to Xiaomi's unlock server. The script is designed to streamline the process, handle region-specific differences (global or China), and provide user-friendly feedback through logging.
 
-#Key functionalities include:
-
-Ensuring necessary tools and dependencies are available (ADB, Python libraries).
-Detecting the device and its region via ADB.
-Capturing encrypted account binding data from logcat and decrypting it.
-Bypassing HyperOS restrictions by altering ROM version data.
-Sending a secure request to Xiaomi’s unlock server to complete the binding.
+# Key functionalities include:
+   - Ensuring necessary tools and dependencies are available (ADB, Python libraries).
+   - Detecting the device and its region via ADB.
+   - Capturing encrypted account binding data from logcat and decrypting it.
+   - Bypassing HyperOS restrictions by altering ROM version data.
+   - Sending a secure request to Xiaomi’s unlock server to complete the binding.
 The script is intended for users familiar with basic device management and requires an Android device with USB debugging enabled.
 
-#Key Components
+# Key Components
 Here’s a detailed breakdown of the script’s main components and their roles:
 
 1. Dependencies and Setup
@@ -57,12 +56,12 @@ Details: Logs key steps, errors, and success messages. Includes contact info (Gi
 8. Main Execution Flow
    - Function: main()
    - Purpose: Orchestrates the entire process.
-#Steps:
+# Steps:
    1- Installs dependencies and downloads platform-tools.
    2- Verifies device connection and region.
    3- Executes ADB commands and captures logcat data.
    4- Decrypts data, applies the HyperOS bypass, and sends the unlock request.
    5- Interprets and logs the server’s response.
    - Details: Exits with an error if no device is detected or data capture fails.
-#Final Words
+# Final Words
 This script provides a robust, automated solution for binding a Xiaomi device to a Mi account, addressing common challenges like HyperOS restrictions and region-specific server interactions. It’s user-friendly yet requires careful use due to its reliance on hardcoded cryptographic keys and direct device manipulation.
